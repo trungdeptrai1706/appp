@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Monetary Conversion App</string>
+    <string-array name="currency_options">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>VND</item>
+        <item>JPY</item>
+        <item>KRW</item>
+    </string-array>
+</resources>

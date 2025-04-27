@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MonetaryConversionApp" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="PhoneKeyButton">
+        <item name="android:layout_width">133dp</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:layout_margin">0.5dp</item>
+        <item name="android:backgroundTint">#ffffff</item>
+        <item name="android:textColor">#575757</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="DisabledTransparentButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:enabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>

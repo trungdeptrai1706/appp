@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:includeFontPadding="false"
+        android:paddingLeft="12dp"
+        android:paddingTop="30dp"
+        android:text="Currency"
+        android:textColor="#1a1a1a"
+        android:textSize="35dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="365dp"
+        android:orientation="vertical"
+        android:paddingLeft="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/input_currency"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="start"
+                android:inputType="numberDecimal"
+                android:maxLength="15"
+                android:paddingLeft="5dp"
+                android:paddingBottom="4dp"
+                android:text="0"
+                android:textColor="#000"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinner_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/output_currency"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="start"
+                android:inputType="numberDecimal"
+                android:maxLength="15"
+                android:paddingLeft="5dp"
+                android:paddingBottom="4dp"
+                android:text="0"
+                android:textColor="#000"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinner_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp" />
+
+        <!-- Cập nhật tỷ giá -->
+        <TextView
+            android:id="@+id/exchange_rate_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:text="1 VND = 0.00003362 EUR"
+            android:textColor="#666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/update_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="Updated 4/23/2025 4:33 PM"
+            android:textColor="#666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/update_rates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:text="Update rates"
+            android:textColor="#0078D7"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="4"
+            android:rowOrderPreserved="false">
+
+            <Button style="@style/DisabledTransparentButton" />
+
+            <Button
+                android:id="@+id/button_delete_all"
+                style="@style/PhoneKeyButton"
+                android:text="CE" />
+
+            <Button
+                android:id="@+id/button_delete"
+                style="@style/PhoneKeyButton"
+                android:text="⌫" />
+
+            <Button
+                android:id="@+id/button_number_1"
+                style="@style/PhoneKeyButton"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/button_number_2"
+                style="@style/PhoneKeyButton"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/button_number_3"
+                style="@style/PhoneKeyButton"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/button_number_4"
+                style="@style/PhoneKeyButton"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/button_number_5"
+                style="@style/PhoneKeyButton"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/button_number_6"
+                style="@style/PhoneKeyButton"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/button_number_7"
+                style="@style/PhoneKeyButton"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/button_number_8"
+                style="@style/PhoneKeyButton"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/button_number_9"
+                style="@style/PhoneKeyButton"
+                android:text="9" />
+
+            <Button style="@style/DisabledTransparentButton" />
+
+            <Button
+                android:id="@+id/button_number_0"
+                style="@style/PhoneKeyButton"
+                android:text="0" />
+
+            <Button style="@style/DisabledTransparentButton" />
+        </GridLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
